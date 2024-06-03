@@ -25,7 +25,8 @@
                 <h2>会員登録</h2>
             </div>
 
-            <form class="form">
+            <form class="form" action="/confirm" method="post">
+                @csrf
                 <div class="form__group">
                     <div class="form__group-content">
                         <div class="form__input--text">
@@ -45,7 +46,7 @@
                 <div class="form__group">
                     <div class="form__group-content">
                         <div class="form__input--text">
-                        <input type="password" name="pass" placeholder="パスワード" />
+                        <input type="password" name="password" placeholder="パスワード" />
                         </div>
                     </div>
                 </div>
@@ -53,7 +54,7 @@
                 <div class="form__group">
                     <div class="form__group-content">
                         <div class="form__input--text">
-                        <input type="password" name="pass" placeholder="確認用パスワード" />
+                        <input type="password" name="password" placeholder="確認用パスワード" />
                         </div>
                     </div>
                 </div>

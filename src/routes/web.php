@@ -19,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/register', [RegisteredUserController::class, 'create']);
-
+Route::post('/confirm', [RegisteredUserController::class, 'confirm']);
+Route::post('/register', [RegisteredUserController::class, 'store']);
