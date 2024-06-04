@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
+use App\Http\Requests\RegisterRequest;
 
 class RegisteredUserController extends Controller
 {
@@ -11,12 +11,12 @@ class RegisteredUserController extends Controller
         return view('register');
     }
 
-    public function confirm(Request $request) {
+    public function confirm(RegisterRequest $request) {
         $data = $request->only(['name', 'email', 'password',]);
         return view('confirm', compact('data'));
     }
 
-    public function store(Request $request) {
+    public function store(RegisterRequest $request) {
         $data = $request->only(['name', 'email', 'password']);
         User::create($data);
         return view('attendance');
