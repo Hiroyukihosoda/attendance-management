@@ -1,0 +1,98 @@
+.header {
+    background: white;
+    height: 100px;
+}
+
+.header__inner {
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.header__logo {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+
+
+.contact-form__content {
+    padding-bottom: 220px;
+    background-color: rgb(244, 242, 242);
+}
+
+.contact-form__heading {
+    padding-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-left: 320px;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    width: 400px;
+    border: 2px solid #b7b5b5;
+    border-radius: 6px;
+
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 50px;
+}
+
+
+.form__button {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+.beneath {
+    position: relative;
+}
+
+.beneath__login {
+    text-decoration: none;
+    padding-left: 700px;
+    padding-top: 10px;
+}
+
+
+.form__button-submit {
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer__inner {
+    text-align: center;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 20px;
+}
