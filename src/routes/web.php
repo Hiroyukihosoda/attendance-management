@@ -17,7 +17,9 @@ use App\Http\Controllers\AuthenticatedSessionController;
 */
 
 Route::get('/register', [RegisteredUserController::class, 'create']);
-Route::post('/confirm', [RegisteredUserController::class, 'confirm']);
-Route::post('/register', [RegisteredUserController::class, 'store']);
-Route::get('/login', [AuthenticatedSessionController::class, 'index']);
-
+// Route::post('/confirm', [RegisteredUserController::class, 'confirm']);
+// Route::post('/register', [RegisteredUserController::class, 'store']);
+// Route::get('/login', [AuthenticatedSessionController::class, 'display']);
+Route::middleware('auth')->group(function () {
+    Route::get('/', [AuthenticatedSessionController::class, 'index']);
+});
